@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TikCare parent control dashboard — manage TikTok settings for your child.">
+  <title>TikCare — Parent Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+<!-- ── Sidebar ───────────────────────────────────────────── -->
+<nav id="tc-sidebar" role="navigation" aria-label="Dashboard sections">
+  <div class="tc-sidebar-logo">
+    <div class="tc-logo-mark">
+      <div class="tc-logo-icon" aria-hidden="true">🛡</div>
+      <div>
+        <div class="tc-logo-text">TikCare</div>
+        <div class="tc-logo-badge">Parent Dashboard</div>
+      </div>
+    </div>
+  </div>
+
+  <ul class="tc-sidebar-nav" role="list">
+    <li role="listitem">
+      <button class="tc-nav-item active" data-section="security" aria-current="page" id="nav-security">
+        <span class="tc-nav-icon" aria-hidden="true">🔐</span>
+        <span>Security</span>
+      </button>
+    </li>
+    <li role="listitem">
+      <button class="tc-nav-item" data-section="interests" id="nav-interests">
+        <span class="tc-nav-icon" aria-hidden="true">✦</span>
+        <span>Interests</span>
+      </button>
+    </li>
+    <li role="listitem">
+      <button class="tc-nav-item" data-section="controls" id="nav-controls">
+        <span class="tc-nav-icon" aria-hidden="true">⚙</span>
+        <span>Controls</span>
+      </button>
+    </li>
+    <li role="listitem">
+      <button class="tc-nav-item" data-section="creators" id="nav-creators">
+        <span class="tc-nav-icon" aria-hidden="true">👤</span>
+        <span>Creators</span>
+      </button>
+    </li>
+  </ul>
+
+  <div class="tc-sidebar-lock">
+    <button class="tc-lock-btn" id="tc-lock-btn" aria-label="Lock TikCare and return to protected mode">
+      <span aria-hidden="true">🔒</span>
+      <span>Lock TikCare</span>
+    </button>
+  </div>
+</nav>
+
+<!-- ── Main ──────────────────────────────────────────────── -->
+<main id="tc-main">
+  <div id="tc-content">
+
+    <!-- SECURITY ─────────────────────────────────────────── -->
+    <section class="tc-section active" id="section-security" aria-labelledby="heading-security">
+      <div class="tc-page-header">
+        <h1 class="tc-page-title" id="heading-security">Security</h1>
+        <p class="tc-page-desc">Current protection status and parent access settings.</p>
+      </div>
+
+      <div class="tc-card">
+        <div class="tc-card-title">Protection Status</div>
+        <div class="tc-status-row">
+          <div>
+            <div class="tc-status-label">TikCare Protection</div>
+            <div class="tc-status-sub">Extension is active on TikTok Web</div>
+          </div>
+          <span class="tc-badge tc-badge--active">
+            <span class="tc-badge-dot" aria-hidden="true"></span>Active
+          </span>
+        </div>
+        <div class="tc-status-row">
+          <div>
+            <div class="tc-status-label">Parent Settings</div>
+            <div class="tc-status-sub">You are currently in the parent dashboard</div>
+          </div>
+          <span class="tc-badge tc-badge--unlocked">
+            <span class="tc-badge-dot" aria-hidden="true"></span>Unlocked
+          </span>
+        </div>
+      </div>
+
+      <div class="tc-card">
+        <div class="tc-card-title">Lock TikCare</div>
+        <p style="font-size:.875rem;color:var(--text-secondary);line-height:1.6;margin-bottom:16px;">
+          Pressing Lock will immediately re-enable all protections and return to child mode. Your PIN will be required to access this dashboard again.
+        </p>
+        <button class="tc-lock-btn" id="tc-lock-btn-security" style="max-width:220px;" aria-label="Lock TikCare and return to protected mode">
+          <span aria-hidden="true">🔒</span>
+          <span>Lock TikCare</span>
+        </button>
+      </div>
+
+      <div class="tc-note">
+        <span class="tc-note-icon" aria-hidden="true">⚠️</span>
+        <p class="tc-note-text">
+          TikCare provides browser-level controls on TikTok Web. It is not device-level tamper-proof security. A determined user with access to browser settings or another browser profile could bypass these controls. Use TikCare as part of a broader approach to digital wellbeing.
+        </p>
+      </div>
+    </section>
+
+    <!-- INTERESTS ────────────────────────────────────────── -->
+    <section class="tc-section" id="section-interests" aria-labelledby="heading-interests">
+      <div class="tc-page-header">
+        <h1 class="tc-page-title" id="heading-interests">Interests</h1>
+        <p class="tc-page-desc">Select topics relevant to your child. Interests filter the creator catalog in the Creators tab.</p>
+      </div>
+
+      <!-- Demo account signals card -->
+      <div class="tc-card">
+        <div class="tc-card-header">
+          <div>
+            <div class="tc-card-title">Use Existing TikTok Interests</div>
+            <p class="tc-card-subtitle">Load suggested interests based on an existing account.</p>
+          </div>
+          <button class="tc-btn tc-btn--secondary" id="btn-import-demo" aria-label="Load demo account interest signals">
+            Load Suggestions
+          </button>
+        </div>
+
+        <!-- Suggested panel — hidden until loaded -->
+        <div id="suggested-interests-panel" style="display:none;">
+          <div class="tc-demo-warning" role="note">
+            <span aria-hidden="true">⚠</span>
+            <strong>DEMO / SAMPLE SIGNALS</strong> — These are example signals only. This version of TikCare has not accessed any real TikTok account data.
+          </div>
+          <div class="tc-suggested-label">Suggested interests</div>
+          <div id="suggested-list" role="list" aria-label="Suggested interests"></div>
+        </div>
+      </div>
+
+      <!-- Interest grid -->
+      <div class="tc-card">
+        <div class="tc-card-title">Topic Categories</div>
+        <div class="tc-interests-grid" id="interests-grid" role="group" aria-label="Interest categories">
+          <!-- rendered by dashboard.ts -->
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTROLS ─────────────────────────────────────────── -->
+    <section class="tc-section" id="section-controls" aria-labelledby="heading-controls">
+      <div class="tc-page-header">
+        <h1 class="tc-page-title" id="heading-controls">Content Controls</h1>
+        <p class="tc-page-desc">Enable or disable individual TikTok features. Disabled features are hidden from the UI and blocked at the route level.</p>
+      </div>
+      <div class="tc-card" id="controls-card">
+        <!-- rendered by dashboard.ts -->
+      </div>
+    </section>
+
+    <!-- CREATORS ─────────────────────────────────────────── -->
+    <section class="tc-section" id="section-creators" aria-labelledby="heading-creators">
+      <div class="tc-page-header">
+        <h1 class="tc-page-title" id="heading-creators">Creators</h1>
+        <p class="tc-page-desc">Review and approve specific creators for your child. A creator must be explicitly approved before they can be accessed.</p>
+      </div>
+
+      <div class="tc-note" style="margin-bottom:20px;">
+        <span class="tc-note-icon" aria-hidden="true">ℹ️</span>
+        <p class="tc-note-text">
+          Creators shown here match your selected interests. Only creators you explicitly approve will be accessible in child mode.
+          Catalog presence alone does not grant access.
+        </p>
+      </div>
+
+      <div class="tc-card" style="padding:0;">
+        <div id="creators-container">
+          <!-- rendered by dashboard.ts -->
+        </div>
+      </div>
+    </section>
+
+  </div><!-- /tc-content -->
+
+  <!-- Save bar -->
+  <div class="tc-save-bar" role="status" aria-live="polite">
+    <span class="tc-save-msg" id="tc-save-msg">Changes are saved automatically.</span>
+    <button class="tc-btn tc-btn--primary" id="tc-save-btn" aria-label="Save all settings">Save Settings</button>
+  </div>
+</main>
+
+<!-- ── Evidence Drawer Overlay ────────────────────────────── -->
+<div id="evidence-overlay" role="dialog" aria-modal="true" aria-labelledby="evidence-drawer-title">
+  <div id="evidence-drawer">
+    <div class="tc-evidence-header">
+      <div>
+        <div class="tc-evidence-creator-name" id="evidence-creator-name"></div>
+        <div class="tc-evidence-creator-handle" id="evidence-creator-handle"></div>
+      </div>
+      <button class="tc-evidence-close" id="evidence-close-btn" aria-label="Close evidence panel">✕</button>
+    </div>
+    <div class="tc-evidence-scroll">
+      <h2 class="tc-evidence-drawer-title" id="evidence-drawer-title">Creator Evidence</h2>
+      <div id="evidence-body"><!-- filled by dashboard.ts --></div>
+    </div>
+    <div class="tc-evidence-footer">
+      <div id="evidence-action"><!-- approve / remove button --></div>
+    </div>
+  </div>
+</div>
+
+<script src="dashboard.js"></script>
+</body>
+</html>

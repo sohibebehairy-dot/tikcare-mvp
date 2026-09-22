@@ -1,0 +1,192 @@
+[
+  {
+    "id": "creator-001",
+    "username": "sciencewithsam",
+    "displayName": "Science With Sam",
+    "category": "science",
+    "description": "Hands-on science experiments for curious minds. Covers chemistry, physics, and biology with safe, reproducible demonstrations.",
+    "reviewStatus": "APPROVED",
+    "reviewDate": "2024-11-15",
+    "evidence": {
+      "profileReviewed": true,
+      "recentContentReviewed": true,
+      "externalLinksReviewed": true,
+      "reviewerNotes": "Consistent educational tone across 50+ reviewed videos. No external link destinations flagged. Comment sections moderated by creator. Content is appropriate for ages 10+.",
+      "contentSample": "Recent videos include: 'Why does baking soda react with vinegar?', 'Build a simple circuit at home', 'The science of soap bubbles'.",
+      "redFlagsFound": false
+    },
+    "sourceProfile": "https://www.tiktok.com/@sciencewithsam",
+    "demoData": true
+  },
+  {
+    "id": "creator-002",
+    "username": "codekids_io",
+    "displayName": "Code Kids",
+    "category": "coding",
+    "description": "Teaching Python, Scratch and web basics to young learners through short, engaging project walkthroughs.",
+    "reviewStatus": "APPROVED",
+    "reviewDate": "2024-11-20",
+    "evidence": {
+      "profileReviewed": true,
+      "recentContentReviewed": true,
+      "externalLinksReviewed": true,
+      "reviewerNotes": "Profile links to an educational website verified as child-appropriate. All reviewed videos are tutorial-only with no advertising embedded. Language is clear and non-commercial.",
+      "contentSample": "Recent videos: 'Build your first Python game', 'HTML in 60 seconds', 'Scratch: Making your character jump'.",
+      "redFlagsFound": false
+    },
+    "sourceProfile": "https://www.tiktok.com/@codekids_io",
+    "demoData": true
+  },
+  {
+    "id": "creator-003",
+    "username": "mathmagicofficial",
+    "displayName": "Math Magic",
+    "category": "stem",
+    "description": "Making mathematics visual and fun. Covers mental maths tricks, geometry puzzles and algebra concepts.",
+    "reviewStatus": "APPROVED",
+    "reviewDate": "2024-12-01",
+    "evidence": {
+      "profileReviewed": true,
+      "recentContentReviewed": true,
+      "externalLinksReviewed": false,
+      "reviewerNotes": "Bio link was not accessible at time of review. Content itself is entirely maths-focused and appropriate. No social commentary or unrelated material observed.",
+      "contentSample": "Recent videos: 'Multiply any two numbers in your head', 'Why is 0.999... equal to 1?', 'The most beautiful equation in maths'.",
+      "redFlagsFound": false
+    },
+    "sourceProfile": "https://www.tiktok.com/@mathmagicofficial",
+    "demoData": true
+  },
+  {
+    "id": "creator-004",
+    "username": "artbylayla",
+    "displayName": "Art By Layla",
+    "category": "art",
+    "description": "Step-by-step drawing tutorials from beginner to intermediate. Covers character design, landscapes, and colour theory.",
+    "reviewStatus": "APPROVED",
+    "reviewDate": "2024-11-28",
+    "evidence": {
+      "profileReviewed": true,
+      "recentContentReviewed": true,
+      "externalLinksReviewed": true,
+      "reviewerNotes": "Positive, encouraging tone throughout. No external links present. Tutorial content only — no lifestyle content mixed in. Suitable for all ages.",
+      "contentSample": "Recent videos: 'How to draw realistic eyes', 'Beginner perspective drawing', 'Colour theory in 2 minutes'.",
+      "redFlagsFound": false
+    },
+    "sourceProfile": "https://www.tiktok.com/@artbylayla",
+    "demoData": true
+  },
+  {
+    "id": "creator-005",
+    "username": "robotics_joe",
+    "displayName": "Robotics With Joe",
+    "category": "robotics",
+    "description": "Arduino, Raspberry Pi and LEGO robotics projects. Shows children how to build real robots at home.",
+    "reviewStatus": "APPROVED",
+    "reviewDate": "2024-12-05",
+    "evidence": {
+      "profileReviewed": true,
+      "recentContentReviewed": true,
+      "externalLinksReviewed": true,
+      "reviewerNotes": "Profile links to GitHub repository — reviewed and contains code only. All videos are project-based. Consistent use of safety warnings when showing soldering or power tools.",
+      "contentSample": "Recent videos: 'Build a line-following robot under £20', 'Program your first Arduino LED', 'LEGO Mindstorms: obstacle course challenge'.",
+      "redFlagsFound": false
+    },
+    "sourceProfile": "https://www.tiktok.com/@robotics_joe",
+    "demoData": true
+  },
+  {
+    "id": "creator-006",
+    "username": "musictheoryforall",
+    "displayName": "Music Theory For All",
+    "category": "music",
+    "description": "Piano basics, music theory fundamentals and ear training for beginners of any age. No prior experience needed.",
+    "reviewStatus": "APPROVED",
+    "reviewDate": "2024-11-10",
+    "evidence": {
+      "profileReviewed": true,
+      "recentContentReviewed": true,
+      "externalLinksReviewed": true,
+      "reviewerNotes": "All content is music instruction. External link leads to a Patreon page — ad-free content available. Language and presentation appropriate for children.",
+      "contentSample": "Recent videos: 'What is a major scale?', 'Learn 4 chords, play 100 songs', 'How to read sheet music — day 1'.",
+      "redFlagsFound": false
+    },
+    "sourceProfile": "https://www.tiktok.com/@musictheoryforall",
+    "demoData": true
+  },
+  {
+    "id": "creator-007",
+    "username": "gamingwithgrace",
+    "displayName": "Gaming With Grace",
+    "category": "gaming",
+    "description": "Family-friendly game reviews, walkthroughs and tips. Focuses on puzzle games, platformers and creative sandboxes.",
+    "reviewStatus": "APPROVED",
+    "reviewDate": "2024-12-10",
+    "evidence": {
+      "profileReviewed": true,
+      "recentContentReviewed": true,
+      "externalLinksReviewed": true,
+      "reviewerNotes": "Content exclusively covers PEGI 3 and PEGI 7 rated games. No sponsored gambling or loot-box content observed. Positive community focus.",
+      "contentSample": "Recent videos: 'Top 5 Minecraft builds for beginners', 'Zelda: Tears of the Kingdom — beginner tips', 'Is this puzzle game the hardest ever?'.",
+      "redFlagsFound": false
+    },
+    "sourceProfile": "https://www.tiktok.com/@gamingwithgrace",
+    "demoData": true
+  },
+  {
+    "id": "creator-008",
+    "username": "techexplained_uk",
+    "displayName": "Tech Explained",
+    "category": "technology",
+    "description": "Explains how everyday technology works — from smartphones to the internet — in clear, jargon-free language.",
+    "reviewStatus": "APPROVED",
+    "reviewDate": "2024-12-03",
+    "evidence": {
+      "profileReviewed": true,
+      "recentContentReviewed": true,
+      "externalLinksReviewed": true,
+      "reviewerNotes": "Professional presentation with no advertising beyond disclosed brand deals for tech products. External link reviewed — leads to newsletter sign-up only, no inappropriate content.",
+      "contentSample": "Recent videos: 'How does Wi-Fi actually work?', 'What is AI in plain English?', 'The history of the internet in 60 seconds'.",
+      "redFlagsFound": false
+    },
+    "sourceProfile": "https://www.tiktok.com/@techexplained_uk",
+    "demoData": true
+  },
+  {
+    "id": "creator-009",
+    "username": "sportscoachkev",
+    "displayName": "Coach Kev",
+    "category": "sports",
+    "description": "Drills, fitness tips and motivational content for young athletes. Covers football, basketball and general fitness.",
+    "reviewStatus": "APPROVED",
+    "reviewDate": "2024-11-25",
+    "evidence": {
+      "profileReviewed": true,
+      "recentContentReviewed": true,
+      "externalLinksReviewed": true,
+      "reviewerNotes": "Focused on skill development and positive mindset. No body image concerns identified. External links lead to a free training programme PDF — reviewed and appropriate.",
+      "contentSample": "Recent videos: '5-minute football skills anyone can learn', 'How to improve your basketball dribbling', 'Morning routine for young athletes'.",
+      "redFlagsFound": false
+    },
+    "sourceProfile": "https://www.tiktok.com/@sportscoachkev",
+    "demoData": true
+  },
+  {
+    "id": "creator-010",
+    "username": "historyinashort",
+    "displayName": "History In A Short",
+    "category": "education",
+    "description": "One historical event or figure per video. Accurate, engaging, and referenced. Covers world history from ancient to modern.",
+    "reviewStatus": "PENDING",
+    "reviewDate": "2024-12-12",
+    "evidence": {
+      "profileReviewed": true,
+      "recentContentReviewed": false,
+      "externalLinksReviewed": false,
+      "reviewerNotes": "Profile and bio reviewed — appears credible. Content review is in progress. Not yet recommended for approval until full review is complete.",
+      "contentSample": "Recent videos: 'The real story of the Titanic', 'Who actually invented the light bulb?'.",
+      "redFlagsFound": false
+    },
+    "sourceProfile": "https://www.tiktok.com/@historyinashort",
+    "demoData": true
+  }
+]

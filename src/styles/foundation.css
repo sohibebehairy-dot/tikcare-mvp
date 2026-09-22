@@ -1,0 +1,96 @@
+/* TikCare Foundation CSS */
+
+/* Immediate evaluation phase — hide TikTok content; keep TikCare surfaces */
+html.tikcare-evaluating body > *:not(#tikcare-lock-overlay):not(#tikcare-child-panel) {
+  display: none !important;
+}
+
+/* Locked state — hide TikTok content; keep lock overlay */
+html.tikcare-locked body > *:not(#tikcare-lock-overlay):not(#tikcare-child-panel) {
+  display: none !important;
+}
+html.tikcare-locked {
+  overflow: hidden !important;
+}
+
+#tikcare-lock-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  color: #fff;
+  z-index: 2147483647 !important; /* Max z-index */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  pointer-events: all !important;
+}
+
+.tikcare-lock-container {
+  background: #111;
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid #333;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  min-width: 300px;
+}
+
+.tikcare-lock-container h1 {
+  margin: 0 0 10px 0;
+  font-size: 2rem;
+  color: #00f2fe; /* TikTok-ish cyan */
+}
+
+.tikcare-lock-container p {
+  margin: 0 0 20px 0;
+  color: #aaa;
+  font-size: 1.1rem;
+}
+
+.tikcare-auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.tikcare-auth-form input {
+  padding: 12px;
+  font-size: 1.2rem;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background: #222;
+  color: #fff;
+  text-align: center;
+  outline: none;
+}
+
+.tikcare-auth-form input:focus {
+  border-color: #00f2fe;
+}
+
+.tikcare-auth-form button {
+  padding: 12px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  background: #fe2c55; /* TikTok red */
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.tikcare-auth-form button:hover {
+  background: #d81b42;
+}
+
+.tikcare-error {
+  color: #fe2c55 !important;
+  font-size: 0.9rem !important;
+  margin: -5px 0 0 0 !important;
+}
